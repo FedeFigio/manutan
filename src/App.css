@@ -1,6 +1,5 @@
 
-
-.inp{
+.inp {
     padding: 5px 10px;
     border: 2px solid rgb(185, 185, 185);
     border-radius: 10px;
@@ -8,21 +7,36 @@
     max-width: 400px;
 }
 
-.title-component{
+.title-component {
     font-size: 15px;
     color: blue;
 }
 
-.text-input{
+.text-input {
     color: rgb(128, 128, 128);
-}
-.text-input-bold{
-    color: rgb(128, 128, 128);
-    font-weight: 700;
 }
 
-.radio{
+.text-input-large {
+    color: rgb(128, 128, 128);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.text-input-medium {
+    color: rgb(128, 128, 128);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.text-input-small {
+    color: rgb(128, 128, 128);
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.radio {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
+
