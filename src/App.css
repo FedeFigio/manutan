@@ -4,12 +4,24 @@
     border: 2px solid rgb(185, 185, 185);
     border-radius: 10px;
     color: black;
-    max-width: 400px;
+    width: 300px;
 }
+.inp-date {
+    padding: 0px 10px;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    color: black;
+    width: 200px;
+}
+
+
+/* FONT */
 
 .title-component {
     font-size: 15px;
     color: blue;
+    font-weight: 700;
+
 }
 
 .text-input {
@@ -24,8 +36,8 @@
 
 .text-input-medium {
     color: rgb(128, 128, 128);
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .text-input-small {
@@ -33,10 +45,12 @@
     font-weight: 700;
     font-size: 10px;
 }
-
-.radio {
-    width: 20px;
-    height: 20px;
+/* ------------------------------------ */
+.input-radio {
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
 }
+
+
 
