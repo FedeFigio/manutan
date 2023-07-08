@@ -3,6 +3,7 @@ import "./App.css";
 import Dati from "./components/Dati";
 import Title from "./components/Title";
 import Logo from "./manutan-logo.png"
+import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
 
 
 export const MyContext = createContext();
@@ -19,7 +20,7 @@ function App() {
         <>
             <MyContext.Provider value={{initialState, setInitialState}}>
                 <div id="App" className="App flex justify-center">
-                    <div className="max-w-5xl w-full p-10 ">
+                    <div className="container py-10 ">
                         <header className="flex justify-between items-center">
                             <img className="w-[150px]" src={Logo} alt=""/>
                             <Title/>
@@ -37,10 +38,12 @@ function App() {
                         
                         <main className="py-10">
                             <Dati/>
+                            <div className="separator"></div>
+                            <InformazioniSulContainerDaProdurre/>
                         </main>
                         
                         <footer>
-                            <button>Esporta in PDF</button>
+                  
                         </footer>
                     </div>
                 </div>

@@ -1,55 +1,76 @@
 
+input:focus:not([type="radio"]) {
+    outline: red solid 1px;
+}
+
 .inp {
     padding: 5px 10px;
-    border: 2px solid rgb(185, 185, 185);
-    border-radius: 10px;
+    border: 1px solid rgb(224, 226, 228);
+    border-radius: 7px;
     color: black;
     width: 300px;
 }
+
 .inp-date {
     padding: 0px 10px;
-    border: 2px solid rgb(185, 185, 185);
-    border-radius: 10px;
+    border: 1px solid rgb(224, 226, 228);
+    border-radius: 7px;
     color: black;
-    width: 200px;
+    width: 100%;
 }
 
 
 /* FONT */
 
-.title-component {
-    font-size: 15px;
-    color: blue;
+.titolo-sezione {
+    font-size: 18px;
+    color: #444444;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.text-titolo {
+    font-size: 48px;
+    color: rgb(60, 77, 86);
     font-weight: 700;
 
 }
 
 .text-input {
-    color: rgb(128, 128, 128);
+    color: black;
+}
+
+.text-input-domanda-principale {
+    color: #787878;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .text-input-large {
-    color: rgb(128, 128, 128);
-    font-weight: 700;
+    color: #787878;
     font-size: 16px;
 }
 
 .text-input-medium {
-    color: rgb(128, 128, 128);
-    font-weight: 500;
-    font-size: 16px;
+    color: #787878;
+    font-size: 14px;
 }
 
 .text-input-small {
-    color: rgb(128, 128, 128);
-    font-weight: 700;
-    font-size: 10px;
+    color: #787878;
+    font-size: 12px;
 }
+
 /* ------------------------------------ */
-.input-radio {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+.wrap-input-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.separator{
+    border-bottom: 1px dashed rgb(224, 226, 228);
+    margin: 24px 0;
 }
 
 
