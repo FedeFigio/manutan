@@ -9,10 +9,11 @@ const SiDesideraIlluminazioneInterna = () => {
 
     });
     return (
+        // SI DESIDERA L'ILLUMINAZIONE INTERNA
         <div className='flex flex-col gap-4'>
             <div className="flex flex-col gap-2">
                 <div className="text-input-domanda-principale">{data.domanda}</div>
-                    <div className="flex gap-5">
+                <div className="flex gap-5">
                     <div className="wrap-input-radio">
                         <input
                             type="radio"
@@ -47,8 +48,14 @@ const SiDesideraIlluminazioneInterna = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-input-medium">{data.sottoDomanda}</div>
+            {/* QUANTI PUNTI LUCE */}
+            {data.response == "si" && <div>
+                <div className="text-input-medium">{data.sottoDomanda}</div>
+                <div className="text-input-medium mb-2">{data.temperaturaAmbienteMin}</div>
+                <input className="inp" name="puntiLuce" type="number" />
+            </div>}
         </div>
+
     )
 }
 
