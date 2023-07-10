@@ -6,6 +6,15 @@ const NecessitaDiClimatizzazione = () => {
         response: null,
         domanda2: "LUOGO DI INSTALLAZIONE",
         response2: null,
+        voltaggioElettrico: "Voltaggio elettrico",
+        temperaturaMinInterna: "Temperatura interna MIN °C",
+        temperaturaMaxInterna: "Temperatura interna MAX °C",
+        tolleranzaPiu: "Tolleranza + °C",
+        tolleranzaMeno: "Tolleranza - °C",
+        temperaturaMin: "Temperatura MIN °C",
+        temperaturaMax: "Temperatura MAX °C",
+        temperaturaAmbienteMin: "Temp. ambiente MIN °C",
+        temperaturaAmbienteMax: "Temp. ambiente MAX °C",
     })
 
     return (
@@ -55,35 +64,35 @@ const NecessitaDiClimatizzazione = () => {
                 {data.response == "si" && <div className='flex flex-col gap-4'>
                     <div className="w-full flex gap-5  ">
                         <div>
-                            <h2 className="text-input-medium mb-2">Voltaggio elettrico</h2>
+                            <div className="text-input-medium mb-2">{data.voltaggioElettrico}</div>
                             <input className="inp" name="voltaggioElettrico" type="number" placeholder='Inserire valore in V' />
                         </div>
                     </div>
                     <div className="w-full flex gap-5  ">
                         <div>
-                            <h2 className="text-input-medium mb-2">Temperatura interna MIN °C</h2>
+                            <div className="text-input-medium mb-2">{data.temperaturaMinInterna}</div>
                             <input className="inp" name="TemperaturaMinInterna" type="number" placeholder='Temperatura MIN °C' />
                         </div>
                         <div>
-                            <h2 className="text-input-medium mb-2">Tolleranza +°C</h2>
+                            <div className="text-input-medium mb-2">{data.tolleranzaPiu}</div>
                             <input className="inp" name="Tolleranza+" type="number" placeholder='Tolleranza +' />
                         </div>
                         <div>
-                            <h2 className="text-input-medium mb-2">Tolleranza -°C</h2>
+                            <div className="text-input-medium mb-2">{data.tolleranzaMeno}</div>
                             <input className="inp" name="Tolleranza-" type="number" placeholder='Tolleranza -' />
                         </div>
                     </div>
                     <div className="w-full flex gap-5  ">
                         <div>
-                            <h2 className="text-input-medium mb-2">Temperatura interna MAX °C</h2>
+                            <div className="text-input-medium mb-2">{data.temperaturaMaxInterna}</div>
                             <input className="inp" name="TemperaturaMaxInterna" type="number" placeholder='Temperatura MAX °C' />
                         </div>
                         <div>
-                            <h2 className="text-input-medium mb-2">Tolleranza +°C</h2>
+                            <div className="text-input-medium mb-2">{data.tolleranzaPiu}</div>
                             <input className="inp" name="Tolleranza+" type="number" placeholder='Tolleranza +' />
                         </div>
                         <div>
-                            <h2 className="text-input-medium mb-2">Tolleranza -°C</h2>
+                            <div className="text-input-medium mb-2">{data.tolleranzaMeno}</div>
                             <input className="inp" name="Tolleranza-" type="number" placeholder='Tolleranza -' />
                         </div>
                     </div>
@@ -91,7 +100,7 @@ const NecessitaDiClimatizzazione = () => {
                     <div className="flex flex-col gap-4">
                         <div className='flex flex-col gap-2'>
                             <div>
-                                <h2 className="text-input-domanda-principale">{data.domanda2}</h2>
+                                <div className="text-input-domanda-principale">{data.domanda2}</div>
                             </div>
                             <div className="flex gap-5">
                                 <div className="wrap-input-radio">
@@ -132,21 +141,21 @@ const NecessitaDiClimatizzazione = () => {
                         {data.response2 == "interno" && <div className='flex flex-col gap-4'>
                             <div className="w-full flex gap-5  ">
                                 <div>
-                                    <h2 className="text-input-medium mb-2">Temperatura MIN °C</h2>
+                                    <div className="text-input-medium mb-2">{data.temperaturaMin}</div>
                                     <input className="inp" name="temperaturaMinInterna" type="number" placeholder='Temperatura MIN °C' />
                                 </div>
                                 <div>
-                                    <h2 className="text-input-medium mb-2">Temperatura MAX °C</h2>
+                                    <div className="text-input-medium mb-2">{data.temperaturaMax}</div>
                                     <input className="inp w-full" name="temperaturaMaxInterna" type="number" placeholder='Temperatura MAX °C' />
                                 </div>
                             </div>
                             <div className="w-full flex gap-5  ">
                                 <div>
-                                    <h2 className="text-input-medium mb-2">Temp. ambiente MIN °C</h2>
+                                    <div className="text-input-medium mb-2">{data.temperaturaAmbienteMin}</div>
                                     <input className="inp" name="temperaturaAmbienteMinInterna" type="number" placeholder='Temp. ambiente MIN °C' />
                                 </div>
                                 <div>
-                                    <h2 className="text-input-medium mb-2">Temp. ambiente MAX °C</h2>
+                                    <div className="text-input-medium mb-2">{data.temperaturaAmbienteMax}</div>
                                     <input className="inp w-full" name="temperaturaAmbienteMaxInterna" type="number" placeholder='Temp. ambiente MAX °C' />
                                 </div>
                             </div>
