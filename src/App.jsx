@@ -6,6 +6,7 @@ import Logo from "./manutan-logo.png"
 import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
 import NecessitaDiClimatizzazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiClimatizzazione";
 import NecessitaDiVentilazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiVentilazione";
+import SiDesideraIlluminazioneInterna from "./components/InformazioniSulContainerDaProdurre/SiDesideraIlluminazioneInterna";
 
 
 export const MyContext = createContext();
@@ -45,6 +46,7 @@ function App() {
                             <InformazioniSulContainerDaProdurre/>
                             <NecessitaDiClimatizzazione/>
                             <NecessitaDiVentilazione/>
+                            <SiDesideraIlluminazioneInterna/>
                             </div>
                         </main>
                         

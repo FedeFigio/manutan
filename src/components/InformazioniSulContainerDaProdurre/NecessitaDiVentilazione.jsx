@@ -15,7 +15,7 @@ const NecessitaDiVentilazione = () => {
     });
     return (
         <div className='flex flex-col gap-4'>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
                 <div className="text-input-domanda-principale">{data.domanda}</div>
                 <div className="flex gap-5">
                     <div className="wrap-input-radio">
@@ -50,10 +50,9 @@ const NecessitaDiVentilazione = () => {
                         />
                         <label className="text-input-small">NO</label>
                     </div>
-
                 </div>
                 {/* TIPOLOGIA */}
-                {data.response=="si"&&<div className="flex flex-col gap-2">
+                {data.response == "si" && <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.sottoDomanda}</div>
                     <div className="flex gap-5">
                         <div className="wrap-input-radio">
@@ -61,14 +60,14 @@ const NecessitaDiVentilazione = () => {
                                 type="radio"
                                 name="naturale/forzata"
                                 value="naturale"
-                            onClick={(e) => {
-                                setData((state) => {
-                                    return {
-                                        ...state,
-                                        responseSottodomanda2: e.target.value,
-                                    };
-                                });
-                            }}
+                                onClick={(e) => {
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseSottodomanda2: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">Naturale</label>
                         </div>
@@ -77,21 +76,21 @@ const NecessitaDiVentilazione = () => {
                                 type="radio"
                                 name="naturale/forzata"
                                 value="forzata"
-                            onClick={(e) => {
-                                setData((state) => {
-                                    return {
-                                        ...state,
-                                        responseSottodomanda2: e.target.value,
-                                    };
-                                });
-                            }}
+                                onClick={(e) => {
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseSottodomanda2: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">Forzata</label>
                         </div>
                     </div>
                 </div>}
                 {/* POSIZIONE VENTILATORE */}
-                {data.responseSottodomanda2=="forzata"&&<div className="flex flex-col gap-2">
+                {data.responseSottodomanda2 == "forzata" && <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.sottoDomanda2}</div>
                     <div className="flex gap-5">
                         <div className="wrap-input-radio">
@@ -170,7 +169,7 @@ const NecessitaDiVentilazione = () => {
                             />
                             <label className="text-input-small">Sinistra</label>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
