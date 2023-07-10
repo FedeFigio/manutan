@@ -4,6 +4,7 @@ import Dati from "./components/Dati";
 import Title from "./components/Title";
 import Logo from "./manutan-logo.png"
 import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
+import NecessitaDiClimatizzazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiClimatizzazione";
 
 
 export const MyContext = createContext();
@@ -36,10 +37,13 @@ function App() {
                             </section>
                         </header>
                         
-                        <main className="py-10">
+                        <main className="py-10 ">
                             <Dati/>
                             <div className="separator"></div>
+                            <div className="flex flex-col gap-4">
                             <InformazioniSulContainerDaProdurre/>
+                            <NecessitaDiClimatizzazione/>
+                            </div>
                         </main>
                         
                         <footer>
