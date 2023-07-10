@@ -15,7 +15,8 @@ const NecessitaDiVentilazione = () => {
     });
     return (
         <div className='flex flex-col gap-4'>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
+                <div className='flex flex-col gap-2'>
                 <div className="text-input-domanda-principale">{data.domanda}</div>
                 <div className="flex gap-5">
                     <div className="wrap-input-radio">
@@ -50,6 +51,7 @@ const NecessitaDiVentilazione = () => {
                         />
                         <label className="text-input-small">NO</label>
                     </div>
+                </div>
                 </div>
                 {/* TIPOLOGIA */}
                 {data.response == "si" && <div className="flex flex-col gap-2">

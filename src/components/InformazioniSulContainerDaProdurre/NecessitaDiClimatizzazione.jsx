@@ -11,44 +11,46 @@ const NecessitaDiClimatizzazione = () => {
     return (
         <div className="flex flex-col gap-4">
             {/* NECESSITA' DI CLIMATIZZAZIONE */}
-            <div className="flex flex-col gap-2">
-                <div className="text-input-domanda-principale">{data.domandaPrincipale}</div>
-                <div className="flex gap-5">
-                    <div className="wrap-input-radio">
-                        <input
-                            type="radio"
-                            name={data.domandaPrincipale}
-                            value="si"
-                            onClick={(e) => {
-                                console.log(e);
-                                setData((state) => {
-                                    return {
-                                        ...state,
-                                        response: e.target.value,
-                                    };
-                                });
-                            }}
-                        />
-                        <label className="text-input-small">SI</label>
-                    </div>
-                    <div className="wrap-input-radio">
-                        <input
-                            type="radio"
-                            name={data.domandaPrincipale}
-                            value="no"
-                            onClick={(e) => {
-                                console.log(e);
-                                setData((state) => {
-                                    return {
-                                        ...state,
-                                        response: e.target.value,
-                                    };
-                                });
-                            }}
-                        />
-                        <label className="text-input-small">NO</label>
-                    </div>
+            <div className="flex flex-col gap-4">
+                <div className='flex flex-col gap-2'>
+                    <div className="text-input-domanda-principale">{data.domandaPrincipale}</div>
+                    <div className="flex gap-5">
+                        <div className="wrap-input-radio">
+                            <input
+                                type="radio"
+                                name={data.domandaPrincipale}
+                                value="si"
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            response: e.target.value,
+                                        };
+                                    });
+                                }}
+                            />
+                            <label className="text-input-small">SI</label>
+                        </div>
+                        <div className="wrap-input-radio">
+                            <input
+                                type="radio"
+                                name={data.domandaPrincipale}
+                                value="no"
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            response: e.target.value,
+                                        };
+                                    });
+                                }}
+                            />
+                            <label className="text-input-small">NO</label>
+                        </div>
 
+                    </div>
                 </div>
                 {data.response == "si" && <div className='flex flex-col gap-4'>
                     <div className="w-full flex gap-5  ">
@@ -86,42 +88,44 @@ const NecessitaDiClimatizzazione = () => {
                         </div>
                     </div>
                     {/* LUOGO DI INSTALLAZIONE */}
-                    <div className="flex flex-col gap-2">
-                        <div>
-                            <h2 className="text-input-domanda-principale">{data.domanda2}</h2>
-                        </div>
-                        <div className="flex gap-5">
-                            <div className="wrap-input-radio">
-                                <input
-                                    className=""
-                                    type="radio"
-                                    name="luogoInstallazione"
-                                    onClick={(e) => {
-                                        setData((state) => {
-                                            return { ...state, response2: e.target.value };
-                                        });
-                                    }}
-                                    value="interno"
-                                />
-                                <label className="text-input-small">Interno</label>
+                    <div className="flex flex-col gap-4">
+                        <div className='flex flex-col gap-2'>
+                            <div>
+                                <h2 className="text-input-domanda-principale">{data.domanda2}</h2>
                             </div>
-                            <div className="wrap-input-radio">
-                                <input
-                                    className=""
-                                    type="radio"
-                                    name="luogoInstallazione"
-                                    value="esterno"
-                                    onClick={(e) => {
+                            <div className="flex gap-5">
+                                <div className="wrap-input-radio">
+                                    <input
+                                        className=""
+                                        type="radio"
+                                        name="luogoInstallazione"
+                                        onClick={(e) => {
+                                            setData((state) => {
+                                                return { ...state, response2: e.target.value };
+                                            });
+                                        }}
+                                        value="interno"
+                                    />
+                                    <label className="text-input-small">Interno</label>
+                                </div>
+                                <div className="wrap-input-radio">
+                                    <input
+                                        className=""
+                                        type="radio"
+                                        name="luogoInstallazione"
+                                        value="esterno"
+                                        onClick={(e) => {
 
-                                        setData((state) => {
-                                            return {
-                                                ...state,
-                                                response2: e.target.value,
-                                            };
-                                        });
-                                    }}
-                                />
-                                <label className="text-input-small">Esterno</label>
+                                            setData((state) => {
+                                                return {
+                                                    ...state,
+                                                    response2: e.target.value,
+                                                };
+                                            });
+                                        }}
+                                    />
+                                    <label className="text-input-small">Esterno</label>
+                                </div>
                             </div>
                         </div>
                         {/* INTERNO */}
