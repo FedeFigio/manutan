@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 function ResistenteAlFuoco(props) {
-    
+
     const [data, setData] = useState({
         domandaPrincipale: "RESISTENTE AL FUOCO ?",
         responseDomandaPrincipale: null,
@@ -57,8 +57,8 @@ function ResistenteAlFuoco(props) {
                     </div>
                 </div>
             </div>
-            
-            {/*#######################################*/}
+
+            {/*CONFORME A STANDARD*/}
             {data.responseDomandaPrincipale == "si" && <>
                 <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.domandaConformeStandard}</div>
@@ -68,15 +68,6 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.domandaConformeStandard}
                                 value="en"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">EN</label>
                         </div>
@@ -85,22 +76,13 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.domandaConformeStandard}
                                 value="fm"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">FM</label>
                         </div>
                     </div>
                 </div>
-                
-                {/*#######################################*/}
+
+                {/*RICHIESTA CERTIFICAZIONE ENTE ESTERNO EX RINA*/}
                 <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.richiestaCertificazioneEnteEsterno}</div>
                     <div className="flex gap-5">
@@ -109,15 +91,6 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.richiestaCertificazioneEnteEsterno}
                                 value="si"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">SI</label>
                         </div>
@@ -126,21 +99,12 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.richiestaCertificazioneEnteEsterno}
                                 value="no"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">NO</label>
                         </div>
                     </div>
                 </div>
-                {/*#######################################*/}
+                {/*LATO DI PROTEZIONE DAL FUOCO*/}
                 <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.latoDiProtezioneDalFuoco}</div>
                     <div className="flex gap-5">
@@ -149,15 +113,6 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.latoDiProtezioneDalFuoco}
                                 value="interno"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">Interno</label>
                         </div>
@@ -166,15 +121,6 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.latoDiProtezioneDalFuoco}
                                 value="esterno"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">Esterno</label>
                         </div>
@@ -183,21 +129,12 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.latoDiProtezioneDalFuoco}
                                 value="internoEsterno"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
                             />
                             <label className="text-input-small">Interno / Esterno</label>
                         </div>
                     </div>
                 </div>
-                {/*#######################################*/}
+                {/*MINUTI DI RESISTENZA AL FUOCO*/}
                 <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.minutiDiResistenzaAlFuoco}</div>
                     <div className="flex gap-5">
@@ -206,15 +143,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="30"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">30</label>
                         </div>
@@ -223,15 +160,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="60"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">60</label>
                         </div>
@@ -240,15 +177,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="90"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">90</label>
                         </div>
@@ -257,15 +194,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="120"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">120</label>
                         </div>
@@ -274,15 +211,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="180"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">180</label>
                         </div>
@@ -291,15 +228,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="240"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">240</label>
                         </div>
@@ -308,15 +245,15 @@ function ResistenteAlFuoco(props) {
                                 type="radio"
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="libero (suggerito dal fornitore)"
-                                // onClick={(e) => {
-                                //     console.log(e);
-                                //     setdata((state) => {
-                                //         return {
-                                //             ...state,
-                                //             responseDomandaRilievo: e.target.value,
-                                //         };
-                                //     });
-                                // }}
+                                onClick={(e) => {
+                                    console.log(e);
+                                    setData((state) => {
+                                        return {
+                                            ...state,
+                                            responseMinutiDiResistenzaAlFuoco: e.target.value,
+                                        };
+                                    });
+                                }}
                             />
                             <label className="text-input-small">libero (suggerito dal fornitore)</label>
                         </div>
@@ -326,7 +263,6 @@ function ResistenteAlFuoco(props) {
                                 name={data.minutiDiResistenzaAlFuoco}
                                 value="altro"
                                 onClick={(e) => {
-                                    console.log(e);
                                     setData((state) => {
                                         return {
                                             ...state,
@@ -346,25 +282,16 @@ function ResistenteAlFuoco(props) {
                                     type="number"
                                     className="inp"
                                     name={data.specificareMinutiRichiesti}
-                                    // onClick={(e) => {
-                                    //     console.log(e);
-                                    //     setdata((state) => {
-                                    //         return {
-                                    //             ...state,
-                                    //             responseDomandaRilievo: e.target.value,
-                                    //         };
-                                    //     });
-                                    // }}
                                 />
                             </div>
-                        
+
                         </div>
                     </div>}
                 </div>
-            
-            
+
+
             </>}
-        
+
         </div>
     );
 }

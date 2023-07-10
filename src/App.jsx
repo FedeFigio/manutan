@@ -5,6 +5,7 @@ import Title from "./components/Title";
 import Logo from "./manutan-logo.png"
 import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
 import NecessitaDiClimatizzazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiClimatizzazione";
+import NecessitaDiVentilazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiVentilazione";
 
 
 export const MyContext = createContext();
@@ -43,6 +44,7 @@ function App() {
                             <div className="flex flex-col gap-4">
                             <InformazioniSulContainerDaProdurre/>
                             <NecessitaDiClimatizzazione/>
+                            <NecessitaDiVentilazione/>
                             </div>
                         </main>
                         
