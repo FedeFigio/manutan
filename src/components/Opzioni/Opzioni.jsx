@@ -7,6 +7,7 @@ import SensoreSversamentoLiquidiSullaVasca from './SensoreSversamentoLiquidiSull
 import ConnessioneRemotaPerAccedereAllaDiagnostica from './ConnessioneRemotaPerAccedereAllaDiagnostica';
 import SensoreRilevamentoVapori from './SensoreRilevamentoVapori';
 import AspiratoreAria from './AspiratoreAria';
+import DisplayEsternoPerTemperaturaInterna from './DisplayEsternoPerTemperaturaInterna';
 
 const Opzioni = () => {
   return (
@@ -20,6 +21,7 @@ const Opzioni = () => {
             <ConnessioneRemotaPerAccedereAllaDiagnostica/>
             <SensoreRilevamentoVapori/>
             <AspiratoreAria/>
+            <DisplayEsternoPerTemperaturaInterna/>
         </div>
   )
 }
