@@ -4,11 +4,8 @@ import Dati from "./components/Dati";
 import Title from "./components/Title";
 import Logo from "./manutan-logo.png"
 import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
-import NecessitaDiClimatizzazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiClimatizzazione";
-import NecessitaDiVentilazione from "./components/InformazioniSulContainerDaProdurre/NecessitaDiVentilazione";
-import SiDesideraIlluminazioneInterna from "./components/InformazioniSulContainerDaProdurre/SiDesideraIlluminazioneInterna";
-import SiDesideraConformitaAllaDirettivaAtex from "./components/InformazioniSulContainerDaProdurre/SiDesideraConformitaAllaDirettivaAtex";
-import ResistenteAlFuoco from "./components/InformazioniSulContainerDaProdurre/ResistenteAlFuoco";
+import Dimensionamento from "./components/Dimensionamento/Dimensionamento";
+
 
 
 export const MyContext = createContext();
@@ -46,15 +43,10 @@ function App() {
                             <div className="separator"></div>
                             <div className="flex flex-col gap-4">
                                 <InformazioniSulContainerDaProdurre />
-                                <ResistenteAlFuoco/>
-                                <NecessitaDiClimatizzazione />
-                                <NecessitaDiVentilazione />
-                                <SiDesideraIlluminazioneInterna />
-                                <SiDesideraConformitaAllaDirettivaAtex />
+                                <div className="separator"></div>
                             </div>
-                            <div className="separator"></div>
                             <div className="flex flex-col gap-4">
-                              
+                                <Dimensionamento />
                             </div>
                         </main>
 

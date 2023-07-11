@@ -8,9 +8,6 @@ const SiDesideraConformitaAllaDirettivaAtex = () => {
         responseSottoDomanda: null,
         sottoDomanda2: "Si desidera che le apparecchiature esterne siano conformi alla direttiva ATEX ?",
         responseSottoDomanda2: null,
-
-
-
     });
     return (
         // SI DESIDERA CONFORMITA ALLA DIRETTIVA ATEX?
