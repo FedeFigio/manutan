@@ -6,12 +6,10 @@ const CosaSiVuoleImmagazzinare = () => {
         responseDomandaPrincipale: null,
         sottoDomanda: "Specificare",
         responseSottodomanda: null,
-        totaleNumeroPostiPallet:"Totale numero posti pallet",
-        responseTotaleNumeroPostiPallet:null,
-        numeroPiani:"Numero piani",
-        responseNumeroPiani:null,
-
-
+        totaleNumeroPostiPallet: "Totale numero posti pallet",
+        responseTotaleNumeroPostiPallet: null,
+        numeroPiani: "Numero piani",
+        responseNumeroPiani: null,
     });
     return (
         <div>
@@ -83,10 +81,9 @@ const CosaSiVuoleImmagazzinare = () => {
                             />
                             <label className="text-input-small">Altro</label>
                         </div>
-
                     </div>
                 </div>
-                {data.responseDomandaPrincipale=="altro"&&<div className="w-full flex gap-5  ">
+                {data.responseDomandaPrincipale == "altro" && <div className="w-full flex gap-5  ">
                     <div>
                         <div className="text-input-medium mb-2">{data.sottoDomanda}</div>
                         <input className="inp" name="temperaturaMinInterna" type="text" />
