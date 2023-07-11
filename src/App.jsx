@@ -6,6 +6,7 @@ import Logo from "./manutan-logo.png"
 import InformazioniSulContainerDaProdurre from "./components/InformazioniSulContainerDaProdurre/InformazioniSulContainerDaProdurre";
 import Dimensionamento from "./components/Dimensionamento/Dimensionamento";
 import Opzioni from "./components/Opzioni/Opzioni";
+import Spedizione from "./components/Spedizione/Spedizione";
 
 
 
@@ -51,7 +52,11 @@ function App() {
                                 <div className="separator"></div>
                             </div>
                             <div className="flex flex-col gap-4">
-                                <Opzioni/>
+                                <Opzioni />
+                                <div className="separator"></div>
+                            </div>
+                            <div className="flex flex-col gap-4">
+                                <Spedizione />
                             </div>
                         </main>
 
