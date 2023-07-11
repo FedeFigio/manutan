@@ -1,6 +1,7 @@
 import React from 'react'
 import SiDesideraLaMessaTerra from "./SiDesideraLaMessaTerra";
 import IlluminazioneEsterna from './IlluminazioneEsterna';
+import VengonoStoccateSostanzeCorrosiveAcciaio from './VengonoStoccateSostanzeCorrosiveAcciaio';
 
 const Opzioni = () => {
   return (
@@ -8,6 +9,7 @@ const Opzioni = () => {
             <div className="titolo-sezione">OPZIONI</div>
             <SiDesideraLaMessaTerra/>
             <IlluminazioneEsterna/>
+            <VengonoStoccateSostanzeCorrosiveAcciaio/>
         </div>
   )
 }
