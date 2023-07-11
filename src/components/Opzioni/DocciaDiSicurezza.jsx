@@ -11,7 +11,7 @@ const DocciaDiSicurezza = () => {
     });
     return (
         <div className='flex flex-col gap-4'>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-2'>
                 <div className="text-input-domanda-principale">{data.domandaPrincipale}</div>
                 <div className="flex gap-5">
                     <div className="wrap-input-radio">
