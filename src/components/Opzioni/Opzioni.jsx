@@ -11,6 +11,7 @@ import DisplayEsternoPerTemperaturaInterna from './DisplayEsternoPerTemperaturaI
 import SensoreFumo from './SensoreFumo';
 import AllarmePortaApertaDopoMinuti from './AllarmePortaApertaDopoMinuti';
 import ImpiantoAutomaticoDiSoppressioneDelFuoco from './ImpiantoAutomaticoDiSoppressioneDelFuoco';
+import EstintoreManuale from './EstintoreManuale';
 
 const Opzioni = () => {
   return (
@@ -28,6 +29,7 @@ const Opzioni = () => {
             <SensoreFumo/>
             <AllarmePortaApertaDopoMinuti/>
             <ImpiantoAutomaticoDiSoppressioneDelFuoco/>
+            <EstintoreManuale/>
         </div>
   )
 }
