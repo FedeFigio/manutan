@@ -5,6 +5,7 @@ import VengonoStoccateSostanzeCorrosiveAcciaio from './VengonoStoccateSostanzeCo
 import VascaRivestitaConPolippropilene from './VascaRivestitaConPolippropilene';
 import SensoreSversamentoLiquidiSullaVasca from './SensoreSversamentoLiquidiSullaVasca';
 import ConnessioneRemotaPerAccedereAllaDiagnostica from './ConnessioneRemotaPerAccedereAllaDiagnostica';
+import SensoreRilevamentoVapori from './SensoreRilevamentoVapori';
 
 const Opzioni = () => {
   return (
@@ -16,6 +17,7 @@ const Opzioni = () => {
             <VascaRivestitaConPolippropilene/>
             <SensoreSversamentoLiquidiSullaVasca/>
             <ConnessioneRemotaPerAccedereAllaDiagnostica/>
+            <SensoreRilevamentoVapori/>
         </div>
   )
 }
