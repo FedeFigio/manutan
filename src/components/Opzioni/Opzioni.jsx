@@ -4,6 +4,7 @@ import IlluminazioneEsterna from './IlluminazioneEsterna';
 import VengonoStoccateSostanzeCorrosiveAcciaio from './VengonoStoccateSostanzeCorrosiveAcciaio';
 import VascaRivestitaConPolippropilene from './VascaRivestitaConPolippropilene';
 import SensoreSversamentoLiquidiSullaVasca from './SensoreSversamentoLiquidiSullaVasca';
+import ConnessioneRemotaPerAccedereAllaDiagnostica from './ConnessioneRemotaPerAccedereAllaDiagnostica';
 
 const Opzioni = () => {
   return (
@@ -14,6 +15,7 @@ const Opzioni = () => {
             <VengonoStoccateSostanzeCorrosiveAcciaio/>
             <VascaRivestitaConPolippropilene/>
             <SensoreSversamentoLiquidiSullaVasca/>
+            <ConnessioneRemotaPerAccedereAllaDiagnostica/>
         </div>
   )
 }
