@@ -6,6 +6,7 @@ import VascaRivestitaConPolippropilene from './VascaRivestitaConPolippropilene';
 import SensoreSversamentoLiquidiSullaVasca from './SensoreSversamentoLiquidiSullaVasca';
 import ConnessioneRemotaPerAccedereAllaDiagnostica from './ConnessioneRemotaPerAccedereAllaDiagnostica';
 import SensoreRilevamentoVapori from './SensoreRilevamentoVapori';
+import AspiratoreAria from './AspiratoreAria';
 
 const Opzioni = () => {
   return (
@@ -18,6 +19,7 @@ const Opzioni = () => {
             <SensoreSversamentoLiquidiSullaVasca/>
             <ConnessioneRemotaPerAccedereAllaDiagnostica/>
             <SensoreRilevamentoVapori/>
+            <AspiratoreAria/>
         </div>
   )
 }
