@@ -15,6 +15,7 @@ import EstintoreManuale from './EstintoreManuale';
 import DocciaDiSicurezza from './DocciaDiSicurezza';
 import Lavaocchi from './Lavaocchi';
 import BotolaTettoPerLuceNaturale from './BotolaTettoPerLuceNaturale';
+import TelecameraInterna from './TelecameraInterna';
 
 const Opzioni = () => {
   return (
@@ -36,6 +37,7 @@ const Opzioni = () => {
             <DocciaDiSicurezza/>
             <Lavaocchi/>
             <BotolaTettoPerLuceNaturale/>
+            <TelecameraInterna/>
         </div>
   )
 }

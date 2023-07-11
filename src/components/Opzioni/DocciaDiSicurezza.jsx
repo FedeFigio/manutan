@@ -47,7 +47,7 @@ const DocciaDiSicurezza = () => {
                         <label className="text-input-small">NO</label>
                     </div>
                 </div>
-                {data.responseDomandaPrincipale == "si" && <div className="w-full flex gap-5  ">
+                {data.responseDomandaPrincipale == "si" && <div className="w-full flex gap-5">
                     <div>
                         <div className="text-input-medium mb-2">{data.sottoDomanda}</div>
                         <div className="flex gap-5">
