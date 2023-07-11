@@ -13,6 +13,7 @@ import AllarmePortaApertaDopoMinuti from './AllarmePortaApertaDopoMinuti';
 import ImpiantoAutomaticoDiSoppressioneDelFuoco from './ImpiantoAutomaticoDiSoppressioneDelFuoco';
 import EstintoreManuale from './EstintoreManuale';
 import DocciaDiSicurezza from './DocciaDiSicurezza';
+import Lavaocchi from './Lavaocchi';
 
 const Opzioni = () => {
   return (
@@ -32,6 +33,7 @@ const Opzioni = () => {
             <ImpiantoAutomaticoDiSoppressioneDelFuoco/>
             <EstintoreManuale/>
             <DocciaDiSicurezza/>
+            <Lavaocchi/>
         </div>
   )
 }
