@@ -9,6 +9,7 @@ import SensoreRilevamentoVapori from './SensoreRilevamentoVapori';
 import AspiratoreAria from './AspiratoreAria';
 import DisplayEsternoPerTemperaturaInterna from './DisplayEsternoPerTemperaturaInterna';
 import SensoreFumo from './SensoreFumo';
+import AllarmePortaApertaDopoMinuti from './AllarmePortaApertaDopoMinuti';
 
 const Opzioni = () => {
   return (
@@ -24,6 +25,7 @@ const Opzioni = () => {
             <AspiratoreAria/>
             <DisplayEsternoPerTemperaturaInterna/>
             <SensoreFumo/>
+            <AllarmePortaApertaDopoMinuti/>
         </div>
   )
 }
