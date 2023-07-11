@@ -1,6 +1,7 @@
 import React from 'react'
 import CosaSiVuoleImmagazzinare from './CosaSiVuoleImmagazzinare'
 import Colore from './Colore'
+import CicloMarino from './CicloMarino'
 
 const Dimensionamento = () => {
     return (
@@ -8,6 +9,7 @@ const Dimensionamento = () => {
             <div className="titolo-sezione">DIMENSIONAMENTO</div>
             <CosaSiVuoleImmagazzinare />
             <Colore />
+            <CicloMarino />
         </div>
     )
 }

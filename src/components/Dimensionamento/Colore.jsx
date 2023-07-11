@@ -6,8 +6,6 @@ const Colore = () => {
         responseDomandaPrincipale: null,
         sottoDomanda: "Specificare RAL",
         responseSottoDomanda: null,
-
-
     });
     return (
         <div className='flex flex-col gap-4'>
