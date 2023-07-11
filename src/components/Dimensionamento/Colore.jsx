@@ -15,7 +15,7 @@ const Colore = () => {
                     <div className="wrap-input-radio">
                         <input
                             type="radio"
-                            name="colore"
+                            name={data.domandaPrincipale}
                             value="bianco"
                             onClick={(e) => {
                                 setData((state) => {
@@ -31,7 +31,7 @@ const Colore = () => {
                     <div className="wrap-input-radio">
                         <input
                             type="radio"
-                            name="colore"
+                            name={data.domandaPrincipale}
                             value="blu"
                             onClick={(e) => {
                                 setData((state) => {
@@ -47,7 +47,7 @@ const Colore = () => {
                     <div className="wrap-input-radio">
                         <input
                             type="radio"
-                            name="colore"
+                            name={data.domandaPrincipale}
                             value="altro"
                             onClick={(e) => {
                                 setData((state) => {
