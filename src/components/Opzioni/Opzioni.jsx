@@ -2,6 +2,7 @@ import React from 'react'
 import SiDesideraLaMessaTerra from "./SiDesideraLaMessaTerra";
 import IlluminazioneEsterna from './IlluminazioneEsterna';
 import VengonoStoccateSostanzeCorrosiveAcciaio from './VengonoStoccateSostanzeCorrosiveAcciaio';
+import VascaRivestitaConPolippropilene from './VascaRivestitaConPolippropilene';
 
 const Opzioni = () => {
   return (
@@ -10,6 +11,7 @@ const Opzioni = () => {
             <SiDesideraLaMessaTerra/>
             <IlluminazioneEsterna/>
             <VengonoStoccateSostanzeCorrosiveAcciaio/>
+            <VascaRivestitaConPolippropilene/>
         </div>
   )
 }
