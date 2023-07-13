@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
+import {MyContext} from "../../App";
 
-function ResistenteAlFuoco(props) {
-
+function ResistenteAlFuoco() {
+    const {initialState, setInitialState} = useContext(MyContext);
     const [data, setData] = useState({
         domandaPrincipale: "RESISTENTE AL FUOCO ?",
         responseDomandaPrincipale: null,
@@ -16,6 +17,17 @@ function ResistenteAlFuoco(props) {
         specificareMinutiRichiesti: "Specificare minuti richiesti",
         responseSpecificareMinutiRichiesti: null,
     });
+    
+    useEffect(() => {
+        setInitialState((state) => {
+            return {
+                ...state,
+                resistenteAlFuoco: data
+                
+            }
+        })
+    }, [data]);
+    
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
@@ -57,7 +69,7 @@ function ResistenteAlFuoco(props) {
                     </div>
                 </div>
             </div>
-
+            
             {/*CONFORME A STANDARD*/}
             {data.responseDomandaPrincipale == "si" && <>
                 <div className="flex flex-col gap-2">
@@ -81,7 +93,7 @@ function ResistenteAlFuoco(props) {
                         </div>
                     </div>
                 </div>
-
+                
                 {/*RICHIESTA CERTIFICAZIONE ENTE ESTERNO EX RINA*/}
                 <div className="flex flex-col gap-2">
                     <div className="text-input-medium">{data.richiestaCertificazioneEnteEsterno}</div>
@@ -284,14 +296,14 @@ function ResistenteAlFuoco(props) {
                                     name={data.specificareMinutiRichiesti}
                                 />
                             </div>
-
+                        
                         </div>
                     </div>}
                 </div>
-
-
+            
+            
             </>}
-
+        
         </div>
     );
 }

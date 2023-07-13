@@ -16,14 +16,14 @@ const Dati = () => {
         responseDataApportamento: null,
         domandaRilievo: "Chi si occupa del rilievo ?",
         responseDomandaRilievo: null,
+        responseDataApprontamento: null
     });
-    console.log(data)
     
     useEffect(() => {
         setInitialState((state) => {
             return {
-                ...state,
-                dati: data
+                ...initialState,
+                dati: data,
             }
         })
     }, [data])
@@ -181,6 +181,14 @@ const Dati = () => {
                                             className="inp"
                                             type="date"
                                             name="data/apportamento"
+                                            onChange={(e) => {
+                                                setdata((state) => {
+                                                    return {
+                                                        ...state,
+                                                        responseDataApprontamento: e.target.value
+                                                    }
+                                                })
+                                            }}
                                         
                                         />
                                     
